@@ -2,6 +2,7 @@ Table Usuarios [headercolor: #175e7a] {
 	UsuariosPK integer [ pk, increment, not null, unique ]
 	Nombre varchar(500) [ not null ]
 	Correo varchar(255) [ not null ]
+	FechaAlta datetime [ not null ]
 
 	indexes {
 		(Correo) [ name: 'Usuarios_index_0', unique ]
@@ -9,7 +10,7 @@ Table Usuarios [headercolor: #175e7a] {
 }
 
 Table Logins [headercolor: #f2d75e] {
-	id integer [ pk, increment, not null ]
+	id integer [ pk, increment, not null, unique ]
 	UsuarioPK integer [ not null ]
 }
 
