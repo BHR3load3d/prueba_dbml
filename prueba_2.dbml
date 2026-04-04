@@ -1,4 +1,4 @@
-Table table_7ilelZoaUS6mO5LQuSRHC [headercolor: #175e7a] {
+Table "963" [headercolor: #175e7a] {
 	id int [ pk, increment, not null ]
 }
 
