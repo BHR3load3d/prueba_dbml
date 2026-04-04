@@ -3,10 +3,10 @@
   "name": "Untitled Diagram",
   "tables": [
     {
-      "id": "7ilelZoaUS6mO5LQuSRHC",
-      "name": "table_7ilelZoaUS6mO5LQuSRHC",
-      "x": -438.9999999999999,
-      "y": -529,
+      "id": "yhaksQEHHaXrNa5f6LWzG",
+      "name": "963",
+      "x": -732,
+      "y": -29.999999999999943,
       "locked": false,
       "fields": [
         {
@@ -20,7 +20,7 @@
           "notNull": true,
           "increment": true,
           "comment": "",
-          "id": "8YKyaCqi9zNP4N3m_DjeO"
+          "id": "ZQD_csmGclJ2q_0htTG9m"
         }
       ],
       "comment": "",
