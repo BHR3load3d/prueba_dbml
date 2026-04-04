@@ -1,1 +1,364 @@
-
+{
+  "database": "transactsql",
+  "name": "Untitled Diagram",
+  "tables": [
+    {
+      "id": "X9y0CQFLVuPyevuiWXtMJ",
+      "name": "Usuarios",
+      "x": 54,
+      "y": 40,
+      "locked": false,
+      "fields": [
+        {
+          "id": "YocGePanBhNm8s53-4q-b",
+          "name": "UsuariosPK",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": false,
+          "notNull": true,
+          "increment": true,
+          "comment": ""
+        },
+        {
+          "id": "K0ZEFoUsow9oqf-ro0QLq",
+          "name": "Nombre",
+          "type": "VARCHAR(500)",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "d1vzSRL9upwDONn9Z__J_",
+          "name": "Correo",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "JSzWR38l9188gkEYb3OWc",
+          "name": "FechaAlta",
+          "type": "DATETIME",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        }
+      ],
+      "comment": "",
+      "indices": [
+        {
+          "id": 0,
+          "fields": [
+            "Correo"
+          ],
+          "name": "Usuarios_index_0",
+          "unique": true
+        }
+      ],
+      "color": "#175e7a"
+    },
+    {
+      "id": "C-OlBtD3mC2Kb21PEe448",
+      "name": "Logins",
+      "x": 308,
+      "y": 40,
+      "locked": false,
+      "fields": [
+        {
+          "id": "v3EihxWCQPbwfljDUQdox",
+          "name": "id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": false,
+          "notNull": true,
+          "increment": true,
+          "comment": ""
+        },
+        {
+          "id": "7VipZMiWD7zMxNIcFyVLN",
+          "name": "UsuarioPK",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#f2d75e"
+    },
+    {
+      "id": "1doW-IiwlnCfhHSE25nqt",
+      "name": "Direcciones",
+      "x": 562,
+      "y": 40,
+      "locked": false,
+      "fields": [
+        {
+          "id": "tB2cHaLXTopGoFA3IyOOg",
+          "name": "DireccionId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": false,
+          "notNull": true,
+          "increment": true,
+          "comment": ""
+        },
+        {
+          "id": "wStFnPwLNJ7H-aXn31EWJ",
+          "name": "Calle",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "JPnFB0Aum1Bfx-uKfxih2",
+          "name": "Numero",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "WwdWUgKqS5k4EteA00v37",
+          "name": "Barrio",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "J_XouZPx7eE3rRCpf3J4q",
+          "name": "Ciudad",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "F6ZMiPL7XFGryBJIQanGT",
+          "name": "Provincia",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "gHNNW--kaMdHBpwhmORLE",
+          "name": "Pais",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "qatQdoURI-ULraRnDwfba",
+      "name": "DireccionesUsuario",
+      "x": 308,
+      "y": 389,
+      "locked": false,
+      "fields": [
+        {
+          "id": "xjC0rG4bPYwBHNGeBMT18",
+          "name": "Id",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": false,
+          "notNull": true,
+          "increment": true,
+          "comment": ""
+        },
+        {
+          "id": "aUqHnnSCfUpI8b6dv2qtJ",
+          "name": "DireccionId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        },
+        {
+          "id": "V1X6nklYX_QXpRtYmtrgz",
+          "name": "UsuarioPK",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": true,
+          "increment": false,
+          "comment": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    },
+    {
+      "id": "QfzZMjAOVPUzQPaWgORSg",
+      "name": "Dim_Paises",
+      "x": 54,
+      "y": 389,
+      "locked": false,
+      "fields": [
+        {
+          "id": "MbehIhRx_58BGqRoV-dTq",
+          "name": "PaisId",
+          "type": "INTEGER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": true,
+          "unsigned": false,
+          "notNull": true,
+          "increment": true,
+          "comment": ""
+        },
+        {
+          "id": "FQ1iwMOOwMKbKtKxUcsiD",
+          "name": "Nombre",
+          "type": "VARCHAR(255)",
+          "default": "",
+          "check": "",
+          "primary": false,
+          "unique": false,
+          "unsigned": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    }
+  ],
+  "relationships": [
+    {
+      "name": "fk_Logins_UsuarioPK_Usuarios",
+      "startTableId": "C-OlBtD3mC2Kb21PEe448",
+      "endTableId": "X9y0CQFLVuPyevuiWXtMJ",
+      "endFieldId": "YocGePanBhNm8s53-4q-b",
+      "startFieldId": "7VipZMiWD7zMxNIcFyVLN",
+      "id": "crw61Rd1LDUsc6oEAZj_I",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "cardinality": "many_to_one"
+    },
+    {
+      "name": "fk_Usuarios_UsuariosPK_DireccionesUsuario",
+      "startTableId": "X9y0CQFLVuPyevuiWXtMJ",
+      "endTableId": "qatQdoURI-ULraRnDwfba",
+      "endFieldId": "V1X6nklYX_QXpRtYmtrgz",
+      "startFieldId": "YocGePanBhNm8s53-4q-b",
+      "id": "zmu-3wgRwam5kWaKB73Qv",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "cardinality": "one_to_many"
+    },
+    {
+      "name": "fk_Direcciones_DireccionId_DireccionesUsuario",
+      "startTableId": "1doW-IiwlnCfhHSE25nqt",
+      "endTableId": "qatQdoURI-ULraRnDwfba",
+      "endFieldId": "aUqHnnSCfUpI8b6dv2qtJ",
+      "startFieldId": "tB2cHaLXTopGoFA3IyOOg",
+      "id": "WC_0MbQ5PJauwmriMgd6u",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "cardinality": "one_to_many"
+    },
+    {
+      "name": "fk_Dim_Paises_PaisId_Direcciones",
+      "startTableId": "QfzZMjAOVPUzQPaWgORSg",
+      "endTableId": "1doW-IiwlnCfhHSE25nqt",
+      "endFieldId": "gHNNW--kaMdHBpwhmORLE",
+      "startFieldId": "MbehIhRx_58BGqRoV-dTq",
+      "id": "3_OFM0L-1lK09L7WdhqgF",
+      "updateConstraint": "No action",
+      "deleteConstraint": "No action",
+      "cardinality": "one_to_many"
+    }
+  ],
+  "notes": [],
+  "areas": [],
+  "pan": {
+    "x": 0,
+    "y": -200
+  },
+  "zoom": 1,
+  "enums": [],
+  "types": []
+}
