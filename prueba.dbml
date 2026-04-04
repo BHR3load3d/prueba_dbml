@@ -14,6 +14,30 @@ Table Logins [headercolor: #f2d75e] {
 	UsuarioPK integer [ not null ]
 }
 
+Table Direcciones [headercolor: #175e7a] {
+	DireccionId integer [ pk, increment, not null ]
+	Calle varchar(255) [ not null ]
+	Numero integer
+	Barrio integer
+	Ciudad integer
+	Provincia integer
+	Pais integer
+}
+
+Table DireccionesUsuario [headercolor: #175e7a] {
+	Id integer [ pk, increment, not null ]
+	DireccionId integer [ not null ]
+	UsuarioPK integer [ not null ]
+}
+
 Ref fk_Logins_UsuarioPK_Usuarios {
 	Logins.UsuarioPK > Usuarios.UsuariosPK [ delete: no action, update: no action ]
+}
+
+Ref fk_Usuarios_UsuariosPK_DireccionesUsuario {
+	Usuarios.UsuariosPK < DireccionesUsuario.UsuarioPK [ delete: no action, update: no action ]
+}
+
+Ref fk_Direcciones_DireccionId_DireccionesUsuario {
+	Direcciones.DireccionId < DireccionesUsuario.DireccionId [ delete: no action, update: no action ]
 }
