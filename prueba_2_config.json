@@ -1,7 +1,33 @@
 {
   "database": "generic",
   "name": "Untitled Diagram",
-  "tables": [],
+  "tables": [
+    {
+      "id": "XSZVj4lCGR4IgHdZWuu5P",
+      "name": "table_XSZVj4lCGR4IgHdZWuu5P",
+      "x": -347.99999999999994,
+      "y": -526,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "ew7trPnpYP1G9C9s1RBRd"
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    }
+  ],
   "relationships": [],
   "notes": [],
   "areas": [],
