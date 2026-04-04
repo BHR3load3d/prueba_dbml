@@ -1,4 +1,0 @@
-Table "pruebiña" [headercolor: #175e7a] {
-	id int [ pk, increment, not null ]
-}
-
