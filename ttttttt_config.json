@@ -1,0 +1,67 @@
+{
+  "database": "generic",
+  "name": "Untitled Diagram",
+  "tables": [
+    {
+      "id": "hp10VU_pKf9eGcH_ql0nz",
+      "name": "852",
+      "x": 34,
+      "y": -329,
+      "locked": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "INT",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "unsigned": true,
+          "notNull": true,
+          "increment": true,
+          "comment": "",
+          "id": "Lt9kGbGL5mr6UW3PgaTCd"
+        },
+        {
+          "id": "D_jHVZDrOxitcCLCUepBm",
+          "name": "5",
+          "type": "SMALLINT",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": "",
+          "size": "",
+          "values": []
+        },
+        {
+          "id": "BqJ2MPXK-dRN-dfMqWoyh",
+          "name": "3",
+          "type": "NUMBER",
+          "default": "",
+          "check": "",
+          "primary": true,
+          "unique": false,
+          "notNull": false,
+          "increment": false,
+          "comment": ""
+        }
+      ],
+      "comment": "",
+      "indices": [],
+      "color": "#175e7a"
+    }
+  ],
+  "relationships": [],
+  "notes": [],
+  "areas": [],
+  "pan": {
+    "x": 0,
+    "y": 0
+  },
+  "zoom": 1,
+  "enums": [],
+  "types": []
+}
