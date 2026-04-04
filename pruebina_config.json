@@ -3,14 +3,14 @@
   "name": "Untitled Diagram",
   "tables": [
     {
-      "id": "lEXpw39LzxTAeDJHJl3lp",
+      "id": "O06cnLDOsMt4WuX6i-nPv",
       "name": "1235698",
-      "x": -728,
-      "y": -383,
+      "x": -650,
+      "y": -145,
       "locked": false,
       "fields": [
         {
-          "id": "QzmhnzLSJJd3qLfh8Jhx4",
+          "id": "TSWmpi-_-za7NoRlmQnh8",
           "name": "id",
           "type": "INT",
           "default": "",
