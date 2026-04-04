@@ -30,6 +30,11 @@ Table DireccionesUsuario [headercolor: #175e7a] {
 	UsuarioPK integer [ not null ]
 }
 
+Table Dim_Paises [headercolor: #175e7a] {
+	PaisId integer [ pk, increment, not null ]
+	Nombre varchar(255)
+}
+
 Ref fk_Logins_UsuarioPK_Usuarios {
 	Logins.UsuarioPK > Usuarios.UsuariosPK [ delete: no action, update: no action ]
 }
@@ -40,4 +45,8 @@ Ref fk_Usuarios_UsuariosPK_DireccionesUsuario {
 
 Ref fk_Direcciones_DireccionId_DireccionesUsuario {
 	Direcciones.DireccionId < DireccionesUsuario.DireccionId [ delete: no action, update: no action ]
+}
+
+Ref fk_Dim_Paises_PaisId_Direcciones {
+	Dim_Paises.PaisId < Direcciones.Pais [ delete: no action, update: no action ]
 }
