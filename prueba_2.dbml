@@ -1,2 +1,4 @@
-
+Table table_XSZVj4lCGR4IgHdZWuu5P [headercolor: #175e7a] {
+	id int [ pk, increment, not null ]
+}
 
