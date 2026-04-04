@@ -1,0 +1,6 @@
+Table "852" [headercolor: #175e7a] {
+	id int [ pk, increment, not null ]
+	"5" smallint [ pk ]
+	"3" number [ pk ]
+}
+
